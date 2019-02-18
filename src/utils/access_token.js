@@ -1,0 +1,3 @@
+export function getAccessToken () {
+  return 'B9-AYIxBz7V5ZuEVLtOQYgveAyF6ePxreAnJUsFDukLrOTxCdhyLQOAJd9PCpX6aQTtF_ZEU1din9ofSh_qoGy1ykg2yrlqT5Bfz81wrEy7fRJLyKEM5q_MH4rYHu5PE'
+};
