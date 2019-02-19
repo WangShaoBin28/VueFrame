@@ -1,5 +1,5 @@
 import axios from 'axios'
-// import { Message, MessageBox } from 'element-ui'
+import { Message, MessageBox } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 import { getAccessToken } from '@/utils/access_token'
@@ -64,12 +64,13 @@ axiosInstance.interceptors.response.use(
     }
   },
   error => {
+    //请求失败后弹框提示
     console.log('err' + error)// for debug
-    // Message({
-    //   message: error.message,
-    //   type: 'error',
-    //   duration: 5 * 1000
-    // })
+    Message({
+      message: error.message,
+      type: 'error',
+      duration: 5 * 1000
+    })
     return Promise.reject(error)
   })
 
