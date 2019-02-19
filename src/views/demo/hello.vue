@@ -18,12 +18,12 @@
     },
     methods: {
       bindCount: function () {
-        API.user_info_parents_get({studentCode: this.studentCode, uniqueCode: this.uniqueCode}).then(data => {
-          console.log('绑定账号: ', data)
-          if (data.code === '2000') {
-            this.$router.push({name: 'parent_classes_classindex'})
-          }
-        })
+        // API.user_info_parents_get({studentCode: this.studentCode, uniqueCode: this.uniqueCode}).then(data => {
+        //   console.log('绑定账号: ', data)
+        //   if (data.code === '2000') {
+            this.$router.push({name: 'demo_hello2'})
+          // }
+        // })
       }
     }
   }
