@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <a-button type="primary" shape="circle" icon="search"></a-button>
     <a-button type="primary" icon="search">Search</a-button>
@@ -8,6 +9,7 @@
     <a-button icon="search">Search</a-button>
     <a-button type="dashed" shape="circle" icon="search" />
     <a-button type="dashed" icon="search">Search</a-button>
+    <count-to :start-val="0" :end-val="aabbb" :duration="3600"/>
   </div>
 <!--<div>-->
     <!--<el-table-->
@@ -36,11 +38,15 @@
 
 <script>
   import API from '@/sdks/jssdk-login'
+  import CountTo from 'vue-count-to'
 
   export default {
+    components: { CountTo },
     data() {
       return {
-          tableData: []
+          tableData: [],
+        aabbb:88888888
+
       }
     },
     methods: {

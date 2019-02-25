@@ -10,12 +10,14 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import  Antd   from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
+import CountTo from 'vue-count-to'
 
 Vue.config.productionTip = false
 
 Vue.use(Mint)
 Vue.use(ElementUI)
 Vue.use(Antd)
+Vue.use(CountTo)
 
 /* eslint-disable no-new */
 new Vue({
