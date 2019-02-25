@@ -1,27 +1,37 @@
 <template>
-<div>
-    <el-table
-      :data="tableData"
-      style="width: 100%">
-      <el-table-column
-        prop="date"
-        label="日期"
-        width="180">
-      </el-table-column>
-      <el-table-column
-        prop="userName"
-        label="姓名"
-        width="180">
-      </el-table-column>
-      <el-table-column
-        prop="address"
-        label="地址">
-      </el-table-column>
-    </el-table>
-    <el-row>
-       <el-button @click="bindCount">默认按钮</el-button>
-    </el-row>
-    </div>
+  <div>
+    <a-button type="primary" shape="circle" icon="search"></a-button>
+    <a-button type="primary" icon="search">Search</a-button>
+    <a-button shape="circle" icon="search" />
+    <a-button icon="search">Search</a-button>
+    <a-button shape="circle" icon="search" />
+    <a-button icon="search">Search</a-button>
+    <a-button type="dashed" shape="circle" icon="search" />
+    <a-button type="dashed" icon="search">Search</a-button>
+  </div>
+<!--<div>-->
+    <!--<el-table-->
+      <!--:data="tableData"-->
+      <!--style="width: 100%">-->
+      <!--<el-table-column-->
+        <!--prop="date"-->
+        <!--label="日期"-->
+        <!--width="180">-->
+      <!--</el-table-column>-->
+      <!--<el-table-column-->
+        <!--prop="userName"-->
+        <!--label="姓名"-->
+        <!--width="180">-->
+      <!--</el-table-column>-->
+      <!--<el-table-column-->
+        <!--prop="address"-->
+        <!--label="地址">-->
+      <!--</el-table-column>-->
+    <!--</el-table>-->
+    <!--<el-row>-->
+       <!--<el-button @click="bindCount">默认按钮</el-button>-->
+    <!--</el-row>-->
+    <!--</div>-->
   </template>
 
 <script>
